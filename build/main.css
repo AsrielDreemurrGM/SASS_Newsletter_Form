@@ -15,4 +15,9 @@ body {
   width: 100%;
 }
 
+header {
+  padding: 16px 0;
+  background-color: yellow;
+}
+
 /*# sourceMappingURL=main.css.map */
