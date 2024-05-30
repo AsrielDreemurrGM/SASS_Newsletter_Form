@@ -1,9 +1,12 @@
 body {
-  background-color: blue;
+  background-color: #eee;
 }
 
 header {
-  background-color: blue;
+  background-color: #eee;
+}
+header h1 {
+  color: #111;
 }
 
 /*# sourceMappingURL=main.css.map */
