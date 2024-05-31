@@ -1,11 +1,16 @@
 @use "config/reset";
 @use "config/variaveis";
+@use "sass:math";
 
 @mixin elementoForm($margin: 16px) {
     padding: 8px;
     display: block;
     width: 100%;
     margin-bottom: $margin;
+}
+
+@function pixelParaEm($alvoEmPixel, $contextoEmPixel: 16px) {
+   @return math.div($alvoEmPixel, $contextoEmPixel);
 }
 
 body {
@@ -65,4 +70,8 @@ header {
             color: #fff;
         }
     }
+}
+
+@media screen and (max-width: variaveis.$mobile) {
+    
 }
