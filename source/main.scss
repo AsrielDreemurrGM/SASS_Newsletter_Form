@@ -10,7 +10,7 @@
 }
 
 @function pixelParaEm($alvoEmPixel, $contextoEmPixel: 16px) {
-   @return math.div($alvoEmPixel, $contextoEmPixel);
+   @return math.div($alvoEmPixel, $contextoEmPixel)+em;
 }
 
 body {
@@ -39,7 +39,7 @@ header {
     max-width: 760px;
 
     h2 {
-        font-size: 48px;
+        font-size: pixelParaEm(48px);
         text-align: center;
     }
 
